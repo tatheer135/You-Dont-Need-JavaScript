@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.timetable-container {
+    position: relative;
+}
+
+.clock {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #fff;
+    border: 8px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.hour {
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transform-origin: center center;
+    font-size: 1rem;
+}
+
+.timeslot {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: white;
+    background-color: #e67e22;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transform-origin: 0% 50%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.timeslot:hover {
+    background-color: #d35400;
+}
+
+/* Customize specific timeslot colors */
+.timeslot:nth-child(1) {
+    background-color: #3498db;
+}
+
+.timeslot:nth-child(2) {
+    background-color: #1abc9c;
+}
+
+.timeslot:nth-child(3) {
+    background-color: #9b59b6;
+}
+
+.timeslot:nth-child(4) {
+    background-color: #e74c3c;
+}
+
+.timeslot:nth-child(5) {
+    background-color: #f39c12;
+}
+
+.timeslot:nth-child(6) {
+    background-color: #2ecc71;
+}
